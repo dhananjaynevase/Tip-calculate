@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Udemy Assignment 1</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <h1>Tip Calculate</h1>
+    <script>
+      var saiHotelBill = 999;
+      var mayurHotelBill = 1250;
+      var sagarHotelBill = 633;
+
+      var tipsaiHotel, tipmayurHotel, tipsaiHotel, totalTip, totalTipAndBill, totalBillAmount;
+
+     //var tipOne = 1000 * (20 / 100);
+     // console.log(tipOne);
+     
+      if(saiHotelBill < 1000){
+       tipsaiHotel = saiHotelBill * (20 / 100);
+       console.log(`Sai hotel tip is   ${tipsaiHotel}`);
+      }
+      if(mayurHotelBill > 1000){
+       tipmayurHotel = mayurHotelBill * (15 / 100);
+        console.log(`Mayur hotel tip is   ${tipmayurHotel}`);
+      }
+      if(sagarHotelBill < 650){
+       tipsaiHotel = sagarHotelBill * (25 / 100);
+        console.log(`Sagar hotel tip is   ${sagarHotelBill}`);
+      }
+
+      totalTip = tipsaiHotel + tipmayurHotel + tipsaiHotel;
+        console.log(`Total tip is   ${totalTip}`);
+
+      totalBillAmount = saiHotelBill + mayurHotelBill + sagarHotelBill;
+
+      totalTip = totalTip + totalBillAmount;
+        console.log(`Total tip and bill amound is   ${totalTip}`);
+
+
+    </script>
+  </body>
+</html>
